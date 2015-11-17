@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -x
+
+CURL="curl"
+URL="http://localhost:5000/opinion"
+
+function doReq {
+	$CURL -X HEYLISTEN -d  "$URL"
+}
+
+$CURL -X HEYLISTEN -d @- "$URL"
